@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  /* grid-column-gap: 1em; */
+  grid-row-gap: 1em;
+  /* gap: 1em; /* use grid-gap for browser compatibility *\ */
+}
+
+.grid  .text {
+  background: #eee;
+  padding: 1em;
+}
+
+/* every odd .text element index */
+.grid > .text:nth-child(odd) {
+  background: #ddd;
+}
