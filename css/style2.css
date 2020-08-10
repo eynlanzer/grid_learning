@@ -1,0 +1,24 @@
+.grid2 {
+  display: grid;
+  grid-gap: 1em;
+  /* recomended use: fr */
+  /* grid-template-columns: 1fr 1fr 1fr;  */
+  grid-template-columns: repeat(3, 1fr); /* same as above */
+  /* also viable */
+  /* grid-template-columns: repeat(4, 1fr 2fr); */
+
+  /* height */
+  /* overwritten if not big enough */
+  /* grid-auto-rows: 100px; */
+  grid-auto-rows: minmax(100px, auto); /* min 100px height; adjust if not big enough */
+}
+
+.grid2  .text2 {
+  background: rgb(219, 179, 179);
+  padding: 1em;
+}
+
+/* every odd .text element index */
+.grid2 .text2:nth-child(even) {
+  background: rgb(238, 232, 232);
+}
